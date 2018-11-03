@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% set titre="Enregistrement d'un nouveau compte" %}
+
+{% block metas %}
+    {{ parent() }}
+    <meta name="title" content="{{ titre }}">
+    <meta name="description" content="Enregistrement d'un nouveau compte.">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+{% endblock %}
+
+
+{% block content %}
+    <myContainer class="myCard ">
+
+    {{ form_start(form) }}
+        {{ form_row(form.username) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.plainPassword.first) }}
+        {{ form_row(form.plainPassword.second) }}
+
+    <button type="submit">Enregistrement</button>
+
+    {{ form_end(form) }}
+
+
+    </myContainer>
+{% endblock %}

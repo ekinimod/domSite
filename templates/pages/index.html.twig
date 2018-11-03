@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% set titre="Un titre de la page d'accueil" %}
+
+{% block metas %}
+    {{ parent() }}
+    <meta name="title" content="{{ titre }}">
+    <meta name="description" content="Qwant is a search engine that respects your privacy and eases discovering and sharing via a social approach.">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+{% endblock %}
+
+
+{% block content %}
+    <main class="content box">
+        <div>Page Index</div>
+        <a href="{{ url('page2') }}">Page 2</a><br>
+        <a href="{{ url('CardBook') }}">CardBook</a><br>
+
+        <h2>In the absence of any media types, </h2>
+        <p>the mixin rule is unconditional. Specifying 'all' for the medium has the same effect. The mixins only take effect if the target medium matches the media list. A target medium matches a media list in the same cases that it would for @import.</p>
+    </main>
+{% endblock %}

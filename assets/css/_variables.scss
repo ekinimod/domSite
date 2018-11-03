@@ -1,0 +1,16 @@
+////////////////////////////////////////////
+// Overwrite des variables SCSS
+////////////////////////////////////////////
+@import '_colors.scss';
+$JauneClair:theme-color("JauneClair");
+
+/*body par defaut*/
+$body-bg: $color-primary-2;
+$body-color: $color-primary-4;
+$primary:$color-primary-3;
+$link-color:$color-secondary-1-3;
+$link-hover-color:$color-secondary-2-3;
+//$navbar-light-color:$JauneClair;
+//$navbar-dark-color:theme-color("Dark");
+//
+//$list-group-bg: theme-color-level("_JauneClair", 20);

@@ -1,0 +1,23 @@
+////////////////////////////////////////////
+// Fonctions
+////////////////////////////////////////////
+
+@function color($key: "blue") {
+  @return map-get($colors, $key);
+}
+
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+@function color-level($color-name: "primary", $level: 0) {
+  $color: theme-color($color-name);
+  $color-base: if($level > 0, #000, #fff);
+  $level: abs($level);
+
+  @return mix($color-base, $color, $level );
+}
+@function gray($intensity, $alpha: 1) {
+  @return rgba($intensity, $intensity, $intensity, $alpha);
+}
+

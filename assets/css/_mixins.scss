@@ -1,0 +1,17 @@
+// =============================================================================
+//	Mixins and Variables
+// =============================================================================
+
+$orange: #C0392B;
+$blue: #2980B9;
+$gray: #EEE;
+
+@mixin ul-nostyle {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin code-php{
+    background-color: gray(10,10);
+}

@@ -1,0 +1,13 @@
+{#<!-- block title fourni la valeur du titre de la page-->
+  <!-- Au titre on atribue un prefix défini pour le Template -->
+  <!-- Puis le titre défini pour la Page -->
+#}
+{% block title %}
+    <title>
+        {% if titre is defined %}
+            {{ messagePreTitle }} - {{ titre }}
+        {% else %}
+            !!! Titre non défini!!!
+        {% endif %}
+    </title>
+{% endblock %}

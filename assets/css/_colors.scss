@@ -1,0 +1,44 @@
+////////////////////////////////////////////
+// Colors
+////////////////////////////////////////////
+// SASS style sheet */
+// Palette color codes */
+// Palette URL: http://paletton.com/#uid=31m1v0kaVz84jP27qHbeJtFiHpX */
+
+
+
+//palette-Ocre
+$color-primary-0: #FFEEA8;	// Main Primary color */
+$color-primary-1: #FFF8DB;
+$color-primary-2: #FFF3C3;
+$color-primary-3: #c9ae57;
+$color-primary-4: #594800;
+
+$color-secondary-1-0: #ACE094;	// Main Secondary color (1) */
+$color-secondary-1-1: #DAF1CF;
+$color-secondary-1-2: #C4E9B2;
+$color-secondary-1-3: #71a455;
+$color-secondary-1-4: #194D00;
+
+$color-secondary-2-0: #FFA8A8;	// Main Secondary color (2) */
+$color-secondary-2-1: #FFDBDB;
+$color-secondary-2-2: #FFC3C3;
+$color-secondary-2-3: #EE8282;
+$color-secondary-2-4: #590000;
+
+
+
+
+
+$theme-colors: (
+        "primary": $color-primary-4,
+        "Secondary": $color-secondary-1-1,
+        "Success": $color-secondary-1-0,
+        "Danger": $color-secondary-2-4,
+        "Warning": $color-secondary-2-3,
+        "Info": $color-primary-3,
+        "Light": $color-primary-1,
+        "Dark": $color-primary-4,
+        "Gris": #999999,
+        "JauneClair": #ffffe9
+);

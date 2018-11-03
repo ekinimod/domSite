@@ -1,0 +1,34 @@
+<!-- Template à 6 colonnes sur 3 lignes-->
+{% set messagePreTitle="TmplDom" %}
+<!DOCTYPE html>
+<html>
+    <!-- Head -->
+    <head>
+        <!-- Meta -->
+        {% block metas %}
+            {% include "default/meta.html.twig" %}
+        {% endblock %}
+        <!-- Title -->
+        {% include "default/title-page.html.twig" %}
+        <!-- Css -->
+        <link href="{{ asset('build/app.css') }}" type="text/css" rel="stylesheet"/>
+    </head>
+    <!-- Body -->
+    <body>
+        <!-- Ligne Entete -->
+        {% include "default/logo.html.twig" %}
+        {% include "default/titre-page.html.twig" %}
+        {% include "default/menu-login.html.twig" %}
+        <!-- Ligne Breadcrumb -->
+        {% include "default/horloge.html.twig" %}
+        {% include "default/breadcrumb.html.twig" %}
+        {% include "default/menu-notif.html.twig" %}
+        <!-- Ligne menu & contenu  -->
+        {% include "default/menu-gauche.html.twig" %}
+        {% block content %}{% endblock %}
+        <!-- Ligne PiedDePage -->
+        {% include "default/footer.html.twig" %}
+        <!-- Script & fin -->
+        <script src="{{ asset('build/app.js') }}"></script>
+    </body>
+</html>

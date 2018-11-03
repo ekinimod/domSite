@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% set titre="Ipsom Lorem" %}
+
+{% block content %}
+    <main class="content">
+        <div class="myFlex">
+
+
+            <myContainer class="myCard ">
+                <div class="myContainer__wraper">
+                    <div class="myContainer__titre">
+                        <h4>Installation de CardBook sur Thunderbird.</h4>
+                    </div>
+                    <div class="myContainer__text">
+                        <ul>
+                            <li>Installer le plugin CardBook sur Thunderbird.</li>
+                            <li>Quitter Thunderbird.</li>
+                            <li>Dans CardBook ajouter un carnet d'adresses avec l'URL suivante :</li>
+                                <myCode class="myCode">https://airdatas.fr/nuage/remote.php/dav/addressbooks/users/dom/contacts/</myCode>
+                            <li>Penser à Sélectionner CardBook comme unique source d'adresse dans les préférences.</li>
+                        </ul>
+                        <img src="{{ asset('build/images/illustration_page__CardBook.png') }}"
+                             class="img-fluid box">
+                        <ul>
+                            <li>Redemarrer Thunderbird.</li>
+                            <li>Si le carnet d'adresses choisi n'est pas automatiquement chargé il faut :</li>
+                            <li>Effacer le répertoire :</li>
+                            <li>~/.thunderbird/$profile.default/storage/permanent/chrome/</li>
+                            <li>Enfin relancer Thunderbird.</li>
+                        </ul>
+
+                    </div>
+                    <div class="myContainer__btn">
+                        <a href="#" class="myContainer__btn">Go somewhere</a>
+                    </div>
+                </div>
+            </myContainer>
+
+
+
+        </div>
+    </main>
+{% endblock %}

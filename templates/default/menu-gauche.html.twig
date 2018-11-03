@@ -1,0 +1,32 @@
+<!-- Inspiré de
+https://codepen.io/ajaymalhotra15/pen/eyNmMo -->
+<!-- Menu Vertical Gauche -->
+<nav class="menu-gauche box">
+
+    {#<div id="content-menu" class="flex-column">#}
+    <div id="content-menu" class="content-menu">
+
+        <div class="barre-de-menu">
+            <div class="barre-de-menu-titre">
+                <h4>Menu</h4>
+            </div>
+            <div class="un-menu">
+                <a href="#menuAdmin" class="menu-titre" data-toggle="collapse" data-parent="#content-menu">Admin</a>
+                <ul class="menu-liste-items collapse menu-collapser flex-column" id="menuAdmin">
+                    <li><a class="item-in-menu" href="#"><i class="fas fa-server"></i> Raspberry Pi 1</a></li>
+                    <li><a class="item-in-menu" href="#"><i class="fas fa-server"></i> Raspberry Pi 2</a></li>
+                    <li><a class="item-in-menu" href="#"><i class="fas fa-server"></i> NasDom</a></li>
+                </ul>
+            </div>
+            <div class="un-menu">
+                <a href="#menuDoc" class="menu-titre" data-toggle="collapse" data-parent="#content-menu">Doc</a>
+                <ul class="menu-liste-items collapse menu-collapser flex-column" id="menuDoc">
+                    <li><a class="item-in-menu" href="#"><i class="fas fa-desktop"></i> Symfony</a></li>
+                    <li><a class="item-in-menu" href="#"><i class="fas newspaper"></i> CSS & Sass</a></li>
+                    <li><a class="item-in-menu" href="#"><i class="fas fa-file"></i> JQuery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</nav>
